@@ -1,0 +1,20 @@
+.get-in-touch {
+  padding: 70px;
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  &__info {
+    h2 {
+      font-size: 30px;
+      line-height: 43px;
+      color: $black;
+    }
+    p {
+      font-size: 18px;
+      line-height: 26px;
+      color: $black;
+    }
+  }
+}

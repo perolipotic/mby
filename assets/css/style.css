@@ -10,7 +10,8 @@
   border: 2px solid;
   border-radius: 35px;
   letter-spacing: 1.2px;
-  display: inline-block; }
+  display: inline-block;
+  cursor: pointer; }
   .btn--orange {
     font-style: normal;
     text-align: center;
@@ -118,6 +119,35 @@ a {
   display: flex;
   margin-top: 70px; }
 
+.get-in-touch {
+  padding: 70px; }
+  .get-in-touch__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+  .get-in-touch__info h2 {
+    font-size: 30px;
+    line-height: 43px;
+    color: #3d4349; }
+  .get-in-touch__info p {
+    font-size: 18px;
+    line-height: 26px;
+    color: #3d4349; }
+
+.our-services {
+  display: flex;
+  background: #F4F2EF;
+  margin-top: 70px; }
+  .our-services--image {
+    width: 40%;
+    background-size: cover;
+    background-position: center;
+    background-image: url("../images/sailing-yacht.jpg"); }
+  .our-services--content {
+    width: 40%;
+    margin-left: 100px;
+    padding: 70px 0; }
+
 footer {
   background-color: #25292C;
   padding: 50px 0; }
@@ -161,19 +191,5 @@ footer {
 .social-media i:hover {
   color: #fc653e;
   transition: all 0.5s ease; }
-
-.our-services {
-  display: flex;
-  background: #F4F2EF;
-  margin-top: 70px; }
-  .our-services--image {
-    width: 40%;
-    background-size: cover;
-    background-position: center;
-    background-image: url("../images/sailing-yacht.jpg"); }
-  .our-services--content {
-    width: 40%;
-    margin-left: 100px;
-    padding: 70px 0; }
 
 /*# sourceMappingURL=style.css.map */
