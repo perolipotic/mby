@@ -119,49 +119,76 @@ a {
     position: relative;
     z-index: 2; }
 
-.section--wrapper {
-  width: 50%;
-  padding-right: 140px; }
-.section--title__small {
-  color: #00aeef;
-  font-size: 16px;
-  line-height: 1.5;
-  letter-spacing: 0px;
-  text-transform: uppercase;
-  position: relative;
-  display: inline; }
-  .section--title__small:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    height: 2px;
-    width: 100%;
-    top: 40px;
-    background-color: #fc653e; }
-.section--title__big {
-  color: black;
-  font-size: 35px;
-  line-height: 1.4;
-  letter-spacing: 0px;
-  margin-top: 60px;
-  margin-bottom: 20px; }
-.section--title__content {
-  color: #a1a1a1;
-  font-size: 15px;
-  line-height: 1.5;
-  letter-spacing: 0px;
-  margin-bottom: 20px;
-  cursor: pointer; }
+.section {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 70px; }
+  .section--wrapper {
+    width: 50%;
+    padding-right: 100px; }
+  .section--title__small {
+    color: #00aeef;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    position: relative;
+    display: inline; }
+    .section--title__small:after {
+      content: "";
+      position: absolute;
+      left: 0;
+      height: 2px;
+      width: 100%;
+      top: 40px;
+      background-color: #fc653e; }
+  .section--title__big {
+    color: black;
+    font-size: 35px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    margin-top: 60px;
+    margin-bottom: 20px; }
+  .section--title__content {
+    color: #a1a1a1;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0px;
+    margin-bottom: 20px;
+    cursor: pointer; }
+  .section--title__listing {
+    list-style: none;
+    margin-top: 40px; }
+    .section--title__listing li {
+      color: #a1a1a1;
+      text-decoration: none;
+      font-weight: 300;
+      font-style: normal;
+      position: relative;
+      padding-left: 15px; }
+      .section--title__listing li:before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 10px;
+        border: solid #00aeef;
+        border-width: 0 2px 2px 0;
+        display: inline-block;
+        padding: 2px;
+        transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg); }
 
 .section--image {
   width: 50%;
+  min-height: 300px;
   background-size: cover;
   background-position: center;
   background-image: url("../images/sailing-yacht.jpg"); }
 
-.about-us {
-  display: flex;
-  margin-top: 70px; }
+.order {
+  order: 1;
+  padding-left: 100px;
+  padding-right: 0; }
 
 .get-in-touch {
   padding: 70px; }

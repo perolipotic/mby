@@ -1,7 +1,10 @@
 .section {
+  display: flex;
+  margin-top: 70px;
+  margin-bottom: 70px;
   &--wrapper {
     width: 50%;
-    padding-right: 140px;
+    padding-right: 100px;
   }
   &--title {
     &__small {
@@ -32,23 +35,49 @@
     }
     &__content {
       color: $gray;
-      font-size: 15px;
+      font-size: 16px;
       line-height: 1.5;
       letter-spacing: 0px;
       margin-bottom: 20px;
       cursor: pointer;
+    }
+    &__listing {
+      list-style: none;
+      margin-top: 40px;
+      li {
+        color: #a1a1a1;
+        text-decoration: none;
+        font-weight: 300;
+        font-style: normal;
+        position: relative;
+        padding-left: 15px;
+        &:before {
+          content: "";
+          position: absolute;
+          left: 0;
+          top: 10px;
+          border: solid $blue;
+          border-width: 0 2px 2px 0;
+          display: inline-block;
+          padding: 2px;
+          transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+        }
+      }
     }
   }
 }
 
 .section--image {
   width: 50%;
+  min-height: 300px;
   background-size: cover;
   background-position: center;
   background-image: url("../images/sailing-yacht.jpg")
 }
 
-.about-us {
-  display: flex;
-  margin-top: 70px;
+.order {
+  order: 1;
+  padding-left: 100px;
+  padding-right: 0;
 }
