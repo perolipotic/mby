@@ -125,43 +125,31 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between; }
-  .footer--wrapper {
-    width: 50%;
-    display: flex;
-    justify-content: space-between; }
-    .footer--wrapper ul li {
-      list-style: none;
-      color: white;
-      text-decoration: none;
-      font-weight: 300;
-      font-style: normal; }
+  .footer ul li {
+    list-style: none;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: normal; }
   .footer-logo {
     font-size: 30px;
     line-height: 36px; }
 
-.footer-info {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end; }
-  .footer-info--title p {
-    font-weight: 400;
-    font-style: normal;
-    font-family: 'Montserrat', sans-serif;
-    color: #00aeef;
-    font-size: 14px;
-    line-height: 1.5;
-    letter-spacing: 0px;
-    text-transform: uppercase; }
-  .footer-info--content p {
-    font-weight: 300;
-    color: white;
-    font-size: 15px;
-    line-height: 1.9;
-    letter-spacing: 0px; }
-
-.address,
-.phone {
-  margin-right: 50px; }
+.footer-info--title p {
+  font-weight: 400;
+  font-style: normal;
+  font-family: 'Montserrat', sans-serif;
+  color: #00aeef;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  text-transform: uppercase; }
+.footer-info--content p {
+  font-weight: 300;
+  color: white;
+  font-size: 15px;
+  line-height: 1.9;
+  letter-spacing: 0px; }
 
 .social-media i {
   margin-right: 15px;

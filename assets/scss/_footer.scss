@@ -6,17 +6,12 @@ footer {
 .footer {
   display: flex;
   justify-content: space-between;
-  &--wrapper {
-    width: 50%;
-    display: flex;
-    justify-content: space-between;
-    ul li {
-      list-style: none;
-      color: $white;
-      text-decoration: none;
-      font-weight: 300;
-      font-style: normal;
-    }
+  ul li {
+    list-style: none;
+    color: $white;
+    text-decoration: none;
+    font-weight: 300;
+    font-style: normal;
   }
   &-logo {
     font-size: 30px;
@@ -25,9 +20,6 @@ footer {
 }
 
 .footer-info {
-  width: 50%;
-  display: flex;
-  justify-content: flex-end;
   &--title p {
     font-weight: 400;
     font-style: normal;
@@ -45,11 +37,6 @@ footer {
     line-height: 1.9;
     letter-spacing: 0px;
   }
-}
-
-.address,
-.phone {
-  margin-right: 50px
 }
 
 .social-media {
