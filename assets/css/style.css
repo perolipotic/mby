@@ -112,7 +112,7 @@ a {
   width: 50%;
   background-size: cover;
   background-position: center;
-  background-image: url("/assets/images/sailing-yacht.jpg"); }
+  background-image: url("../images/sailing-yacht.jpg"); }
 
 .about-us {
   display: flex;
@@ -182,7 +182,7 @@ footer {
     width: 40%;
     background-size: cover;
     background-position: center;
-    background-image: url("/assets/images/sailing-yacht.jpg"); }
+    background-image: url("../images/sailing-yacht.jpg"); }
   .our-services--content {
     width: 40%;
     margin-left: 100px;
