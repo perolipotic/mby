@@ -6,15 +6,32 @@
   color: $white
 }
 
-nav {
+.parallax {
   background-image: url("../images/sailboat-blue-water.jpg");
   width: 100%;
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
   z-index: 2;
   background-attachment: fixed;
+}
+
+nav {
+  &.no-parallax {
+    height: auto;
+    &:after {
+      display: block;
+      background: white;
+      opacity: 1;
+    }
+    .logo a,
+    .main-navigation ul li a {
+      color: $black
+    }
+  }
+  position: relative;
+  height: 600px;
   &:after {
     content: "";
     position: absolute;

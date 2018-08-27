@@ -20,6 +20,14 @@
     border-color: #fc653e;
     text-transform: uppercase; }
 
+.quotation {
+  margin-top: 80px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.gray-bg {
+  background-color: #F4F2EF; }
+
 * {
   box-sizing: border-box;
   margin: 0;
@@ -27,15 +35,28 @@
   font-family: 'Mukta Mahee', sans-serif;
   color: white; }
 
-nav {
+.parallax {
   background-image: url("../images/sailboat-blue-water.jpg");
   width: 100%;
   height: 600px;
   background-repeat: no-repeat;
   background-size: cover;
-  position: relative;
+  position: absolute;
   z-index: 2;
   background-attachment: fixed; }
+
+nav {
+  position: relative;
+  height: 600px; }
+  nav.no-parallax {
+    height: auto; }
+    nav.no-parallax:after {
+      display: block;
+      background: white;
+      opacity: 1; }
+    nav.no-parallax .logo a,
+    nav.no-parallax .main-navigation ul li a {
+      color: #3d4349; }
   nav:after {
     content: "";
     position: absolute;
@@ -74,6 +95,29 @@ nav {
 
 a {
   text-decoration: none; }
+
+.hero {
+  background-image: url("../images/yacht.jpg");
+  width: 100%;
+  padding: 140px 0 140px 0; }
+  .hero--title {
+    font-weight: 400;
+    font-style: white;
+    font-size: 60px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+    position: relative;
+    z-index: 2; }
+  .hero--content {
+    width: 50%;
+    font-weight: 300;
+    font-family: 'Roboto', sans-serif;
+    color: #676767;
+    font-size: 25px;
+    line-height: 1.4;
+    letter-spacing: 0px;
+    position: relative;
+    z-index: 2; }
 
 .section--wrapper {
   width: 50%;
@@ -133,6 +177,27 @@ a {
     font-size: 18px;
     line-height: 26px;
     color: #3d4349; }
+
+.description p {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #3d4349;
+  font-size: 24px;
+  line-height: 1.5;
+  letter-spacing: 0px;
+  margin-bottom: 40px;
+  text-align: center; }
+.description p:last-child {
+  font-weight: 300;
+  font-style: normal;
+  font-family: 'Roboto', sans-serif;
+  color: #676767;
+  font-size: 18px;
+  line-height: 1.4;
+  letter-spacing: 0px;
+  margin-bottom: 80px;
+  text-align: center; }
 
 .our-services {
   display: flex;
