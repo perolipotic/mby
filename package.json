@@ -1,0 +1,11 @@
+{
+  "name": "mby",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "style": "sass --watch assets/scss:assets/css"
+  },
+  "author": "",
+  "license": "ISC"
+}

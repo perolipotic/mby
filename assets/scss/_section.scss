@@ -1,0 +1,54 @@
+.section {
+  &--wrapper {
+    width: 50%;
+    padding-right: 140px;
+  }
+  &--title {
+    &__small {
+      color: $blue;
+      font-size: 16px;
+      line-height: 1.5;
+      letter-spacing: 0px;
+      text-transform: uppercase;
+      position: relative;
+      display: inline;
+      &:after {
+        content: "";
+        position: absolute;
+        left: 0;
+        height: 2px;
+        width: 100%;
+        top: 40px;
+        background-color: $orange;
+      }
+    }
+    &__big {
+      color: black;
+      font-size: 35px;
+      line-height: 1.4;
+      letter-spacing: 0px;
+      margin-top: 60px;
+      margin-bottom: 20px
+    }
+    &__content {
+      color: $gray;
+      font-size: 15px;
+      line-height: 1.5;
+      letter-spacing: 0px;
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+  }
+}
+
+.section--image {
+  width: 50%;
+  background-size: cover;
+  background-position: center;
+  background-image: url("/assets/images/sailing-yacht.jpg")
+}
+
+.about-us {
+  display: flex;
+  margin-top: 70px;
+}
