@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+    crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Mukta+Mahee:200,400" rel="stylesheet">
+  <script src='https://www.google.com/recaptcha/api.js'></script>
+  <title>Mby</title>
+</head>
+
+<body>
+  <nav class="no-parallax">
+    <div class="container">
+      <div class="logo">
+        <a href="index.html">mby</a>
+      </div>
+      <div class="main-navigation">
+        <ul>
+          <li>
+            <a href="o-nama.html">O nama</a>
+          </li>
+          <li>
+            <a href="usluge.html">Usluge</a>
+          </li>
+          <li>
+            <a href="kontakt.html">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <section class="hero">
+    <div class="container">
+      <div class="hero--title">
+        <h1>Kontaktirajte nas</h1>
+      </div>
+      <div class="hero--content">
+      </div>
+    </div>
+  </section>
+  <section class="container">
+
+
+    <div class="form--wrapper">
+      <h1 class="form--title">Pošalji poruku</h1>
+      <form id="form">
+        <div class="field-name label-placeholder">
+          <div class="input-name">
+            <fieldset>
+              <input id="firstName" name="firstName" type="text" autocomplete="off" />
+              <label for="firstName">Vaše ime</label>
+            </fieldset>
+            <p class="form-error" id="firstName-error"></p>
+          </div>
+        </div>
+
+        <div class="field-name label-placeholder">
+          <div class="input-lastname">
+            <fieldset>
+              <input id="lastName" name="lastName" type="text" autocomplete="off" onkeyup="this.setAttribute('value', this.value);"
+                value="" />
+              <label for="lastName">Vaše prezime</label>
+            </fieldset>
+            <p class="form-error" id="lastName-error"></p>
+          </div>
+        </div>
+
+        <div class="field-name label-placeholder">
+          <div class="input-company">
+            <fieldset>
+              <input id="company" name="company" type="text" autocomplete="off" />
+              <label for="company">Ime tvrtke</label>
+            </fieldset>
+            <p class="form-error" id="company-error"></p>
+          </div>
+        </div>
+
+        <div class="field-name  label-placeholder">
+          <div class="input-email">
+            <fieldset>
+              <input id="email" name="email" type="text" autocomplete="off" />
+              <label for="email">Vaša email adresa</label>
+            </fieldset>
+            <p class="form-error" id="email-error"></p>
+          </div>
+        </div>
+
+        <div class="field-name">
+          <div class="input-textarea">
+            <fieldset id="message-fieldset">
+              <textarea id="message" name="message"></textarea>
+              <label for="message">Detalji projekta</label>
+            </fieldset>
+            <p class="form-error" id="message-error"></p>
+          </div>
+        </div>
+        <div class="g-recaptcha" data-sitekey="6LeQ_20UAAAAALqPxpQIiX9Wu6_GwmWRpZtJfs0m" style="
+        display: inline-block;
+        margin:0 auto;
+       text-align: center;"></div>
+        <div class="submit">
+          <button type="submit" class="btn btn-submit">Send Message</button>
+        </div>
+      </form>
+      <div class="success">
+        <h1>Thank you</h1>
+        <p>
+          Your message has been sent. We will contact you by email as soon as possible.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container footer">
+      <div class="footer-logo">mby</div>
+      <div class="foooter-links">
+        <ul>
+          <li>
+            <a href="index.html">Početna</a>
+          </li>
+          <li>
+            <a href="o-nama.html">O nama</a>
+          </li>
+          <li>
+            <a href="usluge.html">Usluge</a>
+          </li>
+        </ul>
+      </div>
+      <div class="foooter-links">
+        <ul>
+          <li>
+            <a href="">Kontakt</a>
+          </li>
+        </ul>
+      </div>
+      <div class="phone">
+        <div class="footer-info--title">
+          <p>Telefon</p>
+        </div>
+        <div class="footer-info--content">
+          <p>+ 385 99 291 55 97
+          </p>
+        </div>
+      </div>
+      <div class="address">
+        <div class="footer-info--title">
+          <p>Adresa</p>
+        </div>
+        <div class="footer-info--content">
+          <p>Marinas Boats & Yachts j.d.o.o.
+          </p>
+          <p>F. Tuđmana 1051
+          </p>
+          <p>21217 Kaštel Štafilić, Hrvatska</p>
+        </div>
+        <div class="social-media">
+          <i class="fab fa-facebook-f"></i>
+          <i class="fab fa-linkedin-in"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="app.js"></script>
+</body>
+
+</html>
