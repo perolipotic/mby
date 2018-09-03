@@ -285,13 +285,13 @@ footer {
 
 .social-media i {
   margin-right: 15px;
-  color: #e7ceb1;
+  color: white;
   transition: all 0.5s ease;
   cursor: pointer; }
 .social-media i:first-child {
   font-size: 13px; }
 .social-media i:hover {
-  color: #fc653e;
+  color: #00aeef;
   transition: all 0.5s ease; }
 
 #form {
