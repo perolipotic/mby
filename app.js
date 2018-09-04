@@ -47,7 +47,6 @@ function showErrors(errors) {
 
 function hideErrors() {
   let errorFields = document.querySelectorAll(".form-error");
-  console.log(errorFields);
   for (let i = 0; i < errorFields.length; i++) {
     errorFields[i].innerHTML = "";
   }
@@ -81,7 +80,7 @@ function validateEmail(prop, data, msg) {
     return {};
   }
   return {
-    [prop]: msg || makeNiceFieldName(prop) + " should be a proper email"
+    [prop]: msg
   };
 }
 
@@ -93,7 +92,7 @@ function formValidation(data) {
       data,
       "Molim vas recite nam više o vašem projektu"
     ),
-    validateEmail("email", data),
+    validateEmail("email", data, "Molimo vas unesite odgovrajuću email adresu"),
     validateExistsString("firstName", data, "Molim vas unesite vaše ime"),
     validateExistsString("lastName", data, "Molim vas unesite vaše prezime"),
     validateExistsString("email", data, "Molim vas unesite vašu email adresu"),
@@ -185,3 +184,28 @@ for (var i = 0; i < messages.length; i++) {
     }
   });
 }
+
+const translations = {
+  kuća: {
+    en: "house",
+    it: "casa"
+  },
+  škola: {
+    en: "school"
+  }
+};
+
+/* function translate() {
+  const currentLanguage = "it";
+  const nodesToTranslate = [].slice.call(
+    document.getElementsByClassName("translate")
+  );
+
+  nodesToTranslate.forEach(
+    node => (node.innerText = translations[node.innerText][currentLanguage])
+  );
+}
+
+setTimeout(() => translate(), 3000); */
+
+console.log(translations.kuća);
