@@ -2,9 +2,11 @@
   width: 1080px;
   margin: 0 auto;
   padding: 0 15px;
+
   @media screen and (max-width: 960px) {
     width: 768px;
   }
+
   @media screen and (max-width: 768px) {
     width: 100%;
   }
@@ -19,6 +21,7 @@
   letter-spacing: 1.2px;
   display: inline-block;
   cursor: pointer;
+
   &--orange {
     font-style: normal;
     text-align: center;
@@ -37,4 +40,11 @@
 
 .gray-bg {
   background-color: #F4F2EF
+}
+
+.cro,
+.en {
+  width: 21px;
+  position: relative;
+  top: 6px;
 }

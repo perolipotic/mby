@@ -1,7 +1,11 @@
 .hero {
-  background-image: url("../images/yacht.jpg");
   width: 100%;
   padding: 140px 0 140px 0;
+
+  &--image {
+    background-image: url("../images/yacht.jpg");
+  }
+
   &--title {
     font-weight: 400;
     font-style: $white;
@@ -11,6 +15,7 @@
     position: relative;
     z-index: 2;
   }
+
   &--content {
     width: 50%;
     font-weight: 300;
