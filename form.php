@@ -1,6 +1,5 @@
 
 <?php
-
     $to ='lipotic.pero@gmail.com';    
     $subject = 'Enswitch.com website message';
     $firstName = $_POST['firstName'];

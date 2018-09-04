@@ -80,7 +80,7 @@ function validateEmail(prop, data, msg) {
     return {};
   }
   return {
-    [prop]: msg
+    [prop]: msg || "Please enter your " + makeNiceFieldName(prop)
   };
 }
 

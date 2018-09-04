@@ -1,15 +1,17 @@
 .hero {
   width: 100%;
-  padding: 140px 0 140px 0;
+  padding: 70px 0 140px 0;
 
   &--image {
-    background-image: url("../images/yacht.jpg");
+    background-image: url("../images/sailing-yacht.jpg");
+    background-position-y: bottom;
   }
 
   &--title {
     font-weight: 400;
     font-style: $white;
     font-size: 60px;
+    width: 60%;
     line-height: 1.1;
     letter-spacing: 1px;
     position: relative;
