@@ -48,3 +48,24 @@
   position: relative;
   top: 6px;
 }
+
+.active {
+  display: block !important;
+}
+
+.full-height {
+  height: 100vh !important;
+}
+
+.hide {
+  display: none !important;
+}
+
+.whiteBg {
+  background-color: $white;
+  background-image: none !important;
+}
+
+.color-black {
+  color: $black;
+}

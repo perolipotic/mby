@@ -20,12 +20,15 @@ nav {
   &.no-parallax {
     height: auto;
 
-    &:after {
+    @media screen and(max-width: 660px) {
+      height: 66px;
+    }
+
+    /*  &:after {
       display: block;
       background: white;
       opacity: 1;
-    }
-
+    } */
     .logo a,
     .main-navigation ul li a {
       color: $black
@@ -35,6 +38,7 @@ nav {
   position: relative;
   height: calc(100vh - 232px);
 
+  /* 
   &:after {
     content: "";
     position: absolute;
@@ -44,18 +48,26 @@ nav {
     bottom: 0;
     background: black;
     opacity: 0.1;
-  }
-
+  } */
   .logo {
     font-size: 40px;
     position: relative;
     z-index: 2;
+
+    @media screen and(max-width: 660px) {
+      position: absolute;
+      left: 15px;
+    }
   }
 
   .container {
     display: flex;
     align-items: center;
     justify-content: space-between;
+
+    @media screen and(max-width: 660px) {
+      flex-direction: column;
+    }
   }
 
   .main-navigation {
@@ -66,9 +78,28 @@ nav {
     position: relative;
     z-index: 2;
 
+    @media screen and(max-width: 660px) {
+      display: none;
+      top: 100px;
+    }
+
+    ul {
+      @media screen and(max-width: 660px) {
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+      }
+    }
+
     ul li {
       display: inline;
       margin-right: 40px;
+
+      @media screen and(max-width: 660px) {
+        margin-right: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+      }
 
       a {
         cursor: pointer;
@@ -76,6 +107,10 @@ nav {
         font-weight: 200;
         text-transform: uppercase;
         letter-spacing: 1.4px;
+
+        @media screen and(max-width: 660px) {
+          padding: 10px;
+        }
       }
 
       &:last-child {
@@ -87,4 +122,55 @@ nav {
 
 a {
   text-decoration: none;
+}
+
+@media screen and (max-width:660px) {
+  .hamburger {
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    z-index: 11;
+  }
+
+  .bar1,
+  .bar2,
+  .bar3 {
+    width: 35px;
+    height: 3px;
+    background-color: $white;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .hamburger.white .bar1,
+  .hamburger.white .bar2,
+  .hamburger.white .bar3,
+    {
+    background-color: $white;
+  }
+
+  .hamburger.white.change .bar1,
+  .hamburger.white.change .bar2,
+  .hamburger.white.change .bar3,
+  .hamburger.black .bar1,
+  .hamburger.black .bar2,
+  .hamburger.black .bar3 {
+    background-color: $black;
+  }
+
+  .change .bar1 {
+    -webkit-transform: rotate(-45deg) translate(-6px, 6px);
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+
+  .change .bar2 {
+    opacity: 0;
+  }
+
+  .change .bar3 {
+    -webkit-transform: rotate(45deg) translate(-6px, -8px);
+    transform: rotate(45deg) translate(-6px, -8px);
+  }
 }

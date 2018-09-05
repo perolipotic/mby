@@ -64,3 +64,18 @@ footer {
     transition: all 0.5s ease
   }
 }
+
+@media screen and(max-width: 560px) {
+
+  .footer-logo,
+  .phone,
+  .address,
+    {
+    margin-bottom: 20px;
+  }
+
+  .phone,
+  .social-media {
+    margin-top: 20px;
+  }
+}

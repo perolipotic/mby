@@ -12,6 +12,11 @@
 
 <body>
   <nav class="no-parallax">
+    <div class="hamburger black">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
     <div class="container">
       <div class="logo">
         <a href="index.html">mby</a>
@@ -78,22 +83,6 @@
     </p>
     </div>
   </section>
-
-  <!-- 
-  <section class="get-in-touch gray-bg">
-    <div class="container">
-      <div class="get-in-touch__wrapper">
-        <div class="get-in-touch__info">
-          <h2>Zainteresirane ste za naše usluge?</h2>
-          <p>Slobodno nam se obratite ukoliko imate pitanja. Stojimo vam na raspolaganju</p>
-        </div>
-        <div class="btn btn--orange">
-          <a href="">Kontaktirajte nas</a>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
   <footer>
     <div class="container footer">
       <div class="footer-logo">mby</div>
@@ -144,6 +133,16 @@
       </div>
     </div>
   </footer>
+  <script>
+    document
+      .querySelector(".hamburger")
+      .addEventListener("click", function () {
+        document.querySelector(".hamburger").classList.toggle("change");
+        document.querySelector(".main-navigation").classList.toggle("active");
+        document.querySelector(".no-parallax").classList.toggle("full-height");
+
+      });
+  </script>
 </body>
 
 </html>

@@ -13,6 +13,11 @@
 
 <body>
   <nav class="no-parallax">
+    <div class="hamburger black">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
     <div class="container">
       <div class="logo">
         <a href="index.html">mby</a>
@@ -148,6 +153,16 @@
       </div>
     </div>
   </footer>
+  <script>
+    document
+      .querySelector(".hamburger")
+      .addEventListener("click", function () {
+        document.querySelector(".hamburger").classList.toggle("change");
+        document.querySelector(".main-navigation").classList.toggle("active");
+        document.querySelector(".no-parallax").classList.toggle("full-height");
+
+      });
+  </script>
   <script src="app.js"></script>
 </body>
 

@@ -1,0 +1,51 @@
+  <!--  <section class="container section">
+    <div class="section--wrapper">
+      <div class="section--title__small">
+        O nama
+      </div>
+      <div class="section--title__big">
+        Više od trideset godina iskustva u brodogradnji i nautičkom turizmu.
+      </div>
+      <div class="section--title__content">
+        Ukoliko vam je potrebna pomoć prilikom planiranja, izgradnje ili upravljanja marinama ili drugim objektima nautičkog turizma,
+        možemo vam ponuditi naše usluge.
+      </div>
+      <div class="btn btn--orange">
+        <a href="o-nama.html">Više informacija</a>
+      </div>
+    </div>
+    <div class="section--image">
+    </div>
+  </section>
+
+  <section class="our-services">
+    <div class="our-services--image"></div>
+    <div class="our-services--content">
+      <div class="section--title__small">
+        Usluge
+      </div>
+      <div class="section--title__big">
+        Nekakav naslov o uslugama
+      </div>
+      <div class="section--title__content">
+        Ukratko nesto o uslugama ili da stavimo dvi tri ikone?!
+      </div>
+      <div class="btn btn--orange">
+        <a href="">Više informacija</a>
+      </div>
+    </div>
+  </section>
+  <section class="get-in-touch">
+    <div class="container">
+      <div class="get-in-touch__wrapper">
+        <div class="get-in-touch__info">
+          <h2>Zainteresirane ste za naše usluge?</h2>
+          <p>Slobodno nam se obratite ukoliko imate pitanja. Stojimo vam na raspolaganju</p>
+        </div>
+        <div class="btn btn--orange">
+          <a href="">Kontaktirajte nas</a>
+        </div>
+      </div>
+    </div>
+  </section>
+ -->

@@ -11,10 +11,17 @@
   <link rel="preload" as="image" href="assets/images/sailboat-blue-water.jpg">
 </head>
 
+
 <body>
   <div class="parallax"></div>
   <nav>
+    <div class="hamburger white">
+      <div class="bar1"></div>
+      <div class="bar2"></div>
+      <div class="bar3"></div>
+    </div>
     <div class="container">
+
       <div class="logo">
         <a href="index.html">mby</a>
       </div>
@@ -50,57 +57,6 @@
     </section>
   </nav>
 
-  <!--  <section class="container section">
-    <div class="section--wrapper">
-      <div class="section--title__small">
-        O nama
-      </div>
-      <div class="section--title__big">
-        Više od trideset godina iskustva u brodogradnji i nautičkom turizmu.
-      </div>
-      <div class="section--title__content">
-        Ukoliko vam je potrebna pomoć prilikom planiranja, izgradnje ili upravljanja marinama ili drugim objektima nautičkog turizma,
-        možemo vam ponuditi naše usluge.
-      </div>
-      <div class="btn btn--orange">
-        <a href="o-nama.html">Više informacija</a>
-      </div>
-    </div>
-    <div class="section--image">
-    </div>
-  </section>
-
-  <section class="our-services">
-    <div class="our-services--image"></div>
-    <div class="our-services--content">
-      <div class="section--title__small">
-        Usluge
-      </div>
-      <div class="section--title__big">
-        Nekakav naslov o uslugama
-      </div>
-      <div class="section--title__content">
-        Ukratko nesto o uslugama ili da stavimo dvi tri ikone?!
-      </div>
-      <div class="btn btn--orange">
-        <a href="">Više informacija</a>
-      </div>
-    </div>
-  </section>
-  <section class="get-in-touch">
-    <div class="container">
-      <div class="get-in-touch__wrapper">
-        <div class="get-in-touch__info">
-          <h2>Zainteresirane ste za naše usluge?</h2>
-          <p>Slobodno nam se obratite ukoliko imate pitanja. Stojimo vam na raspolaganju</p>
-        </div>
-        <div class="btn btn--orange">
-          <a href="">Kontaktirajte nas</a>
-        </div>
-      </div>
-    </div>
-  </section>
- -->
   <footer>
     <div class="container footer">
       <div class="footer-logo">mby</div>
@@ -151,6 +107,22 @@
       </div>
     </div>
   </footer>
+  <script>
+    document
+      .querySelector(".hamburger")
+      .addEventListener("click", function () {
+        document.querySelector(".hamburger").classList.toggle("change");
+        document.querySelector(".main-navigation").classList.toggle("active");
+        document.querySelector(".parallax").classList.toggle("full-height");
+        document.querySelector(".parallax").classList.toggle("whiteBg");
+        document.querySelector(".logo a").classList.toggle("color-black");
+        document.querySelectorAll(".main-navigation ul li a")[0].classList.toggle("color-black");
+        document.querySelectorAll(".main-navigation ul li a")[1].classList.toggle("color-black");
+        document.querySelectorAll(".main-navigation ul li a")[2].classList.toggle("color-black");
+        document.querySelector(".hero").classList.toggle("hide");
+
+      });
+  </script>
 </body>
 
 </html>
