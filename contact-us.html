@@ -55,36 +55,15 @@
     <div class="form--wrapper">
       <form id="form">
         <div class="field-name label-placeholder">
-          <div class="input-name">
-            <fieldset>
-              <input id="firstName" name="firstName" type="text" autocomplete="off" />
-              <label for="firstName">Your name</label>
-            </fieldset>
-            <p class="form-error" id="firstName-error"></p>
-          </div>
-        </div>
-
-        <div class="field-name label-placeholder">
           <div class="input-lastname">
             <fieldset>
               <input id="lastName" name="lastName" type="text" autocomplete="off" onkeyup="this.setAttribute('value', this.value);"
                 value="" />
-              <label for="lastName">Your surname</label>
+              <label for="lastName">Name or company name</label>
             </fieldset>
             <p class="form-error" id="lastName-error"></p>
           </div>
         </div>
-
-        <div class="field-name label-placeholder">
-          <div class="input-company">
-            <fieldset>
-              <input id="company" name="company" type="text" autocomplete="off" />
-              <label for="company">Company name</label>
-            </fieldset>
-            <p class="form-error" id="company-error"></p>
-          </div>
-        </div>
-
         <div class="field-name  label-placeholder">
           <div class="input-email">
             <fieldset>
@@ -99,7 +78,7 @@
           <div class="input-textarea">
             <fieldset id="message-fieldset">
               <textarea id="message" name="message"></textarea>
-              <label for="message">Project</label>
+              <label for="message">Note</label>
             </fieldset>
             <p class="form-error" id="message-error"></p>
           </div>
@@ -109,7 +88,7 @@
         margin:0 auto;
        text-align: center;"></div>
         <div class="submit">
-          <button type="submit" class="btn btn-submit">Send Message</button>
+          <button type="submit" class="btn btn-submit">Pošalji poruku</button>
         </div>
       </form>
       <div class="success">

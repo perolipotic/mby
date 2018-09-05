@@ -5,6 +5,9 @@
   &--image {
     background-image: url("../images/sailing-yacht.jpg");
     background-position-y: bottom;
+    background-repeat: no-repeat;
+    width: 100%;
+    background-size: cover;
   }
 
   &--title {
@@ -16,6 +19,7 @@
     letter-spacing: 1px;
     position: relative;
     z-index: 2;
+    text-shadow: 1px 3px #000
   }
 
   &--content {
@@ -28,5 +32,6 @@
     letter-spacing: 0px;
     position: relative;
     z-index: 2;
+    text-shadow: 1px 3px #000
   }
 }

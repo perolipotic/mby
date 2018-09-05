@@ -83,20 +83,34 @@ function validateEmail(prop, data, msg) {
     [prop]: msg || "Please enter your " + makeNiceFieldName(prop)
   };
 }
+function checkLanguage() {
+  return !!window.location.pathname.includes("hr");
+}
+
+function setMessage(data) {
+  let language;
+  checkLanguage() ? (language = "hr") : (language = "en");
+  translations = {
+    en: {
+      correctEmail: "Please enter valid email address.",
+      name: "Please enter your name or company name.",
+      email: "Please enter your email address."
+    },
+    hr: {
+      correctEmail: "Molimo vas unesite odgovrajuću email adresu.",
+      name: "Molim vas unesite vaše ime ili ime tvrtke",
+      email: "Molim vas unesite vašu email adresu"
+    }
+  };
+  return translations[language][data];
+}
 
 function formValidation(data) {
   const errors = Object.assign(
     {},
-    validateExistsString(
-      "message",
-      data,
-      "Molim vas recite nam više o vašem projektu"
-    ),
-    validateEmail("email", data, "Molimo vas unesite odgovrajuću email adresu"),
-    validateExistsString("firstName", data, "Molim vas unesite vaše ime"),
-    validateExistsString("lastName", data, "Molim vas unesite vaše prezime"),
-    validateExistsString("email", data, "Molim vas unesite vašu email adresu"),
-    validateExistsString("company", data, "Molim vas unesite ime vaše tvrtke")
+    validateEmail("email", data, setMessage("correctEmail")),
+    validateExistsString("lastName", data, setMessage("name")),
+    validateExistsString("email", data, setMessage("email"))
   );
 
   if (Object.keys(errors).length !== 0) {
@@ -111,10 +125,8 @@ document.getElementById("form").addEventListener("submit", function(e) {
   e.preventDefault();
 
   const data = {
-    firstName: document.getElementById("firstName").value,
     lastName: document.getElementById("lastName").value,
     email: document.getElementById("email").value,
-    company: document.getElementById("company").value,
     message: document.getElementById("message").value
   };
 
@@ -133,10 +145,8 @@ document.getElementById("form").addEventListener("submit", function(e) {
     // }
     xhr.onload = function() {
       if (this.status === 200) {
-        document.getElementById("firstName").value = "";
         document.getElementById("lastName").value = "";
         document.getElementById("email").value = "";
-        document.getElementById("company").value = "";
         document.getElementById("message").value = "";
         document.getElementById("form").remove();
         document.getElementsByClassName("success")[0].style.display = "flex";
@@ -184,28 +194,3 @@ for (var i = 0; i < messages.length; i++) {
     }
   });
 }
-
-const translations = {
-  kuća: {
-    en: "house",
-    it: "casa"
-  },
-  škola: {
-    en: "school"
-  }
-};
-
-/* function translate() {
-  const currentLanguage = "it";
-  const nodesToTranslate = [].slice.call(
-    document.getElementsByClassName("translate")
-  );
-
-  nodesToTranslate.forEach(
-    node => (node.innerText = translations[node.innerText][currentLanguage])
-  );
-}
-
-setTimeout(() => translate(), 3000); */
-
-console.log(translations.kuća);
