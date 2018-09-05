@@ -1,21 +1,17 @@
 
 <?php
     $to ='lipotic.pero@gmail.com';    
-    $subject = 'Enswitch.com website message';
-    $firstName = $_POST['firstName'];
+    $subject = 'Upit s MBY webstranice';
     $lastName = $_POST['lastName'];
-    $company = $_POST['company'];
     $email = $_POST['email'];
     $message = $_POST['message'];
     $body = '
     <html>
     <head>
-      <title>Enswitch contact form</title>
+      <title>Mby Contact Form</title>
     </head>
     <body>
-      <p>First name: '.$firstName.'</p>
-      <p>Last name: '.$lastName.'</p>
-      <p>Company: '.$company.'</p>
+      <p>Name: '.$lastName.'</p>
       <p>Email: '.$email.'</p>
       <p>Message: '.$message.'</p>
     </body>
