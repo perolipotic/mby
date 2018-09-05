@@ -1,12 +1,13 @@
 .hero {
   width: 100%;
   padding: 70px 0 140px 0;
+  position: relative;
 
   @media screen and(max-width: 660px) {
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 0;
+    align-items: flex-end;
+    padding-bottom: 70px;
     height: 380px;
   }
 
@@ -49,5 +50,16 @@
       font-size: 20px;
       width: 100%;
     }
+  }
+
+  &:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    opacity: 0.2;
   }
 }
