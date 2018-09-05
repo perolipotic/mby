@@ -3,6 +3,10 @@
   margin: 0 auto;
   padding: 0 15px;
 
+  @media screen and (max-width: 1080px) {
+    width: 960px;
+  }
+
   @media screen and (max-width: 960px) {
     width: 768px;
   }
