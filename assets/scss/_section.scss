@@ -84,6 +84,8 @@
   min-height: 300px;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-position-y: bottom;
 
   @media screen and(max-width: 560px) {
     width: 100%;
@@ -92,11 +94,11 @@
 }
 
 .section--firstImage {
-  background-image: url("../images/DJI_0938.jpg")
+  background-image: url("../images/servis.jpg")
 }
 
 .section--secondImage {
-  background-image: url("../images/DJI_0922.jpg")
+  background-image: url("../images/servis2.jpg")
 }
 
 .order {

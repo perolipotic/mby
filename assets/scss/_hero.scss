@@ -1,6 +1,6 @@
 .hero {
   width: 100%;
-  padding: 70px 0 140px 0;
+  padding: 120px 0 140px 0;
   position: relative;
 
   @media screen and(max-width: 660px) {
@@ -12,17 +12,26 @@
   }
 
   &--image {
-    background-image: url("../images/sailing-yacht.jpg");
     background-position-y: bottom;
     background-repeat: no-repeat;
     width: 100%;
     background-size: cover;
+    &-one{
+      background-image: url("../images/naslovna1.jpg");
+    }
+    &-two{
+      background-image: url("../images/naslovna2.jpg");
+    }
+    &-three{
+      background-image: url("../images/naslovna3.jpg");
+    }
   }
+
 
   &--title {
     font-weight: 400;
     font-style: $white;
-    font-size: 60px;
+    font-size: 50px;
     width: 60%;
     line-height: 1.1;
     letter-spacing: 1px;
