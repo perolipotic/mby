@@ -17,13 +17,14 @@
     width: 100%;
     background-size: cover;
     &-one{
-      background-image: url("../images/naslovna1.jpg");
+      background-image: url("../images/naslovna3.jpg");
+      background-position-x: 100%;
     }
     &-two{
       background-image: url("../images/naslovna2.jpg");
     }
     &-three{
-      background-image: url("../images/naslovna3.jpg");
+      background-image: url("../images/naslovna4.jpg");
     }
   }
 
@@ -44,6 +45,12 @@
     }
   }
 
+  &--bigger{
+    text-align: center;
+    font-size: 65px;
+    width: 100%;
+  }
+
   &--content {
     width: 50%;
     font-weight: 300;
@@ -59,6 +66,10 @@
       font-size: 20px;
       width: 100%;
     }
+  }
+  &--content-center{
+    width: 100%;
+    text-align: center;
   }
 
   &:after {

@@ -68,7 +68,11 @@
         </li>
       </ul>
     </div>
-    <div class="section--image section--firstImage">
+    <div class="section--image--wrapper">
+      <div class="section--image section--firstImage">
+      </div>
+      <div class="section--image section--secondImage">
+      </div>
     </div>
   </section>
 
@@ -84,7 +88,11 @@
         <li>Installation and maintenance of equipment: propulsion systems, deck equipment, masts and sails.</li>
       </ul>
     </div>
-    <div class="section--image section--secondImage">
+    <div class="section--image--wrapper">
+      <div class="section--image section--thirdImage">
+      </div>
+      <div class="section--image section--fourthImage">
+      </div>
     </div>
   </section>
 
@@ -94,7 +102,7 @@
       <div class="foooter-links">
         <ul>
           <li>
-            <a href="index.html">Homepage</a>
+            <a href="/">Homepage</a>
           </li>
           <li>
             <a href="about-us.html">About us</a>
@@ -102,8 +110,6 @@
           <li>
             <a href="services.html">Services</a>
           </li>
-
-
         </ul>
       </div>
       <div class="foooter-links">
@@ -113,15 +119,27 @@
           </li>
         </ul>
       </div>
-      <div class="phone">
-        <div class="footer-info--title">
-          <p>Telephone</p>
+      <div>
+        <div class="phone">
+          <div class="footer-info--title">
+            <p>Telephone</p>
+          </div>
+          <div class="footer-info--content">
+            <p>+ 385 99 291 55 97
+            </p>
+          </div>
         </div>
-        <div class="footer-info--content">
-          <p>+ 385 99 291 55 97
-          </p>
+        <div class="email">
+          <div class="footer-info--title">
+            <p>Email</p>
+          </div>
+          <div class="footer-info--content">
+            <p><a href="mailto:mby@mby.hr">mby@mby.hr</a>
+            </p>
+          </div>
         </div>
       </div>
+
       <div class="address">
         <div class="footer-info--title">
           <p>Address</p>
@@ -139,16 +157,6 @@
         </div>
       </div>
     </div>
-    <script>
-      document
-        .querySelector(".hamburger")
-        .addEventListener("click", function () {
-          document.querySelector(".hamburger").classList.toggle("change");
-          document.querySelector(".main-navigation").classList.toggle("active");
-          document.querySelector(".no-parallax").classList.toggle("full-height");
-
-        });
-    </script>
   </footer>
 </body>
 
