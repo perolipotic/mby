@@ -1,6 +1,6 @@
 
 <?php
-    $to ='lipotic.pero@gmail.com';    
+    $to ='mby@mby.hr';    
     $subject = 'Upit s MBY webstranice';
     $lastName = $_POST['lastName'];
     $email = $_POST['email'];

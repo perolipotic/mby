@@ -7,7 +7,7 @@ footer {
   display: flex;
   justify-content: space-between;
 
-  @media screen and(max-width: 560px) {
+  @media screen and(max-width: 660px) {
     flex-direction: column;
     text-align: center;
   }
@@ -18,10 +18,7 @@ footer {
     text-decoration: none;
     font-weight: 300;
     font-style: normal;
-
-    @media screen and(max-width: 560px) {
-      margin-bottom: 5px;
-    }
+    margin-bottom: 7px;
   }
 
   &-logo {
@@ -69,11 +66,12 @@ footer {
   }
 }
 
-@media screen and(max-width: 560px) {
+@media screen and(max-width: 660px) {
 
   .footer-logo,
   .phone,
   .address,
+  .email,
     {
     margin-bottom: 20px;
   }

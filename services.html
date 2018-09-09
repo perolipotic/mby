@@ -68,11 +68,7 @@
         </li>
       </ul>
     </div>
-    <div class="section--image--wrapper">
-      <div class="section--image section--firstImage">
-      </div>
-      <div class="section--image section--secondImage">
-      </div>
+    <div class="section--image section--thirdImage">
     </div>
   </section>
 
@@ -88,12 +84,11 @@
         <li>Installation and maintenance of equipment: propulsion systems, deck equipment, masts and sails.</li>
       </ul>
     </div>
-    <div class="section--image--wrapper">
-      <div class="section--image section--thirdImage">
-      </div>
-      <div class="section--image section--fourthImage">
-      </div>
+
+
+    <div class="section--image section--fourthImage">
     </div>
+
   </section>
 
   <footer>
@@ -149,15 +144,29 @@
           </p>
           <p>F. Tuđmana 1051
           </p>
-          <p>21217 Kaštel Štafilić, Hrvatska</p>
+          <p>21217 Kaštel Štafilić, Croatia</p>
         </div>
         <div class="social-media">
-          <i><img src="assets/images/facebook-logo.svg" alt=""></i>
-          <i><img src="assets/images/linkedin-logo.svg" alt=""></i>
+          <!--         <a href="" target="_blank">
+            <img src="../assets/images/facebook-logo.svg" alt="">
+          </a> -->
+          <a href="https://www.linkedin.com/in/mario-gei%C4%87-79021923/" target="_blank">
+            <img src="../assets/images/linkedin-logo.svg" alt="">
+          </a>
         </div>
       </div>
     </div>
   </footer>
+  <script>
+    document
+      .querySelector(".hamburger")
+      .addEventListener("click", function () {
+        document.querySelector(".hamburger").classList.toggle("change");
+        document.querySelector(".main-navigation").classList.toggle("active");
+        document.querySelector(".no-parallax").classList.toggle("full-height");
+
+      });
+  </script>
 </body>
 
 </html>

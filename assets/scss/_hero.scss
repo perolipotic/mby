@@ -49,6 +49,9 @@
     text-align: center;
     font-size: 65px;
     width: 100%;
+    @media screen and(max-width: 660px) {
+      font-size: 40px;
+    }
   }
 
   &--content {
