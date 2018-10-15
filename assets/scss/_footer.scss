@@ -26,8 +26,9 @@ footer {
   }
 
   &-logo {
-    font-size: 30px;
-    line-height: 36px;
+    img{
+      width: 50px;
+    }
   }
 }
 
