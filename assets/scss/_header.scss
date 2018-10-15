@@ -58,9 +58,15 @@ nav {
     opacity: 0.1;
   } */
   .logo {
-    font-size: 40px;
+    font-size: 0px;
     position: relative;
     z-index: 2;
+    img{
+      width: 50px;
+      @media screen and(max-width: 660px) {
+       width: 40px;
+      }
+    }
 
     @media screen and(max-width: 660px) {
       position: absolute;
@@ -180,5 +186,22 @@ a {
   .change .bar3 {
     -webkit-transform: rotate(45deg) translate(-6px, -8px);
     transform: rotate(45deg) translate(-6px, -8px);
+  }
+}
+
+.nav-is-close-logo{
+    display: block;
+}
+
+.nav-is-open-logo{
+    display: none;
+}
+.color-black {
+  .nav-is-close-logo{
+    display: none;
+    background: red;
+  }
+  .nav-is-open-logo{
+    display: block;
   }
 }

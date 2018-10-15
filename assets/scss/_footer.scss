@@ -1,6 +1,10 @@
 footer {
   background-color: #25292C;
   padding: 50px 0;
+  height: 232px;
+  @media screen and(max-width: 768px) {
+    height: auto;
+  }
 }
 
 .footer {
